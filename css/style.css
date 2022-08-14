@@ -249,6 +249,7 @@ color: var(--main-color);
   letter-spacing: -3px;
    margin: 0;
 
+   
 }
 
 .special-heading + p {
@@ -341,6 +342,8 @@ color: var(--main-color);
 
 .portfolio {
 
+background-color: var(--section-background);
+
 
 
 }
@@ -358,9 +361,9 @@ gap: 20px;
 .porfolio-cards .card {
 
 /* margin: 10px; */
-border-radius: 6px;
+border-radius: 20px;
 box-shadow: rgb(163 163 163 / 25%) 4px 4px 25px;
-
+margin-bottom: 20px;
 
 
 }
@@ -369,29 +372,48 @@ box-shadow: rgb(163 163 163 / 25%) 4px 4px 25px;
 margin: 0;
 overflow: hidden;
 position: relative;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+width: 100%;
+max-height: 60%;
+}
+
+.img-card .close {
+display: none;
 }
 
 .images-card {
 
 width: 100%;
-height: 100%;
+max-height: 100%;
 opacity: 90%;
 transition: all var(--main-duration) ease-in-out ;
 
 }
+
+.card .img-card img {
+
+
+height: 250px;
+
+
+}
+
 .images-card:hover {
 
-  transform: rotate(3deg) scale(1.2);
+  transform: rotate(2deg) scale(1.2);
   opacity: 100%;
+  cursor: pointer;
   }
 
-  .porfolio-cards .card h2 {
+  /* .porfolio-cards .card h2 {
 
         font-weight: 800;
         margin: 10px 10px;
         padding: 0 5px;
         font-size: 20px;
-    }
+    } */
 
   
 
@@ -403,6 +425,94 @@ transition: all var(--main-duration) ease-in-out ;
   margin: 15px 15px;
 }
 
+
+.porfolio-cards .card .project-text {
+
+ display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.porfolio-cards .card .project-text h2 {
+
+  font-weight: 600;
+  margin: 10px 10px;
+  padding: 0 5px;
+  font-size: 15px;
+
+}
+
+.porfolio-cards .card .project-text .project-logo-date {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+
   
+.porfolio-cards .card .project-text .ps {
+
+  background-color: #001e29;
+  font-size: 13px;
+  color: #04bbfb;
+  border: #04bbfb solid 2px;
+  padding: 0px 4px;
+  border-radius: 6px;
+  font-weight: 800;
+  box-shadow: rgb(163 163 163) 2px 2px 3px;
+
+}
+
+
+.porfolio-cards .card .project-text .ai {
+
+  background-color: #001e29;
+  font-size: 13px;
+  color: #fa8703;
+  border: #fa8703 solid 2px;
+  padding: 0px 4px;
+  border-radius: 6px;
+  font-weight: 800;
+  box-shadow: rgb(163 163 163) 2px 2px 3px;
+
+
+}
+
+
+.porfolio-cards .card .project-text .id {
+
+  background-color: #001e29;
+  font-size: 13px;
+  color: #ff3a94;
+  border: #ff3a94 solid 2px;
+  padding: 0px 4px;
+  border-radius: 6px;
+  font-weight: 800;
+  box-shadow: rgb(163 163 163) 2px 2px 3px;
+
+}
+
+  
+
+.porfolio-cards .card .project-text .project-date {
+
+  background-color: #293a42;
+  font-size: 12px;
+  color: #f1f1f1;
+  padding: 7px 5px;
+  border-radius: 2px;
+  font-weight: 800;
+  box-shadow: rgb(163 163 163) 2px 2px 3px;
+
+}
+
+
+
 
 
