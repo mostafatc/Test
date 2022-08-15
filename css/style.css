@@ -1,4 +1,5 @@
 :root{
+    /* --main-color: #fd1f65; */
     --main-color: #fd1f65;
     --secondary-color: #2c4755;
     --section-padding: 60px;
@@ -59,7 +60,6 @@ min-height: 100vh;
   .header{
 
     padding: 10px;
-    background-color:  ;
     max-height: 64px;
 
   }
@@ -99,13 +99,13 @@ padding: 8px;
   display: none;
   list-style: none;
   margin: 0;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   position: absolute;
   top: 15px;
   right: 15px;
   z-index: 1;
   border-radius: 2px;
-  min-width: 170px;
+  min-width: 195px;
   box-shadow: rgb(163 163 163 / 25%) 1px 1px 10px;
 
 
@@ -125,7 +125,6 @@ padding: 14px 0;
     margin: 15px;
     padding-bottom: 5px;
     transition: var(--main-duration) ;
-    border-bottom: 2px #999 solid ;
     letter-spacing: 2px;
 
 
@@ -207,10 +206,9 @@ padding: 8px;
 .landing .intro-text .cvdownload {
 margin-top: 25px;
 padding: 10px;
-background-color: rgba(255, 255, 255, 0.8);
+background-color: rgba(255, 255, 255, 0.7);
 height: 50px;
 border: none;
-outline: none;
 border-radius: 2px;
 box-shadow: rgb(163 163 163 / 25%) 4px 4px 25px;
 text-transform: uppercase;
@@ -219,15 +217,13 @@ transition: all var(--main-duration);
 }
 .landing .intro-text .cvdownload:hover {
   background-color: white;
-  outline: none;
   border-radius: 4px;
-  transform: scale(1.05);
+  font-size: 16px;
   }
 
 .landing .intro-text .cvdownload a {
 
 text-decoration: none;
-font-size: 16px;
 font-weight: 800;
 color: var(--main-color);
 
@@ -291,7 +287,7 @@ color: var(--main-color);
   text-align: center;
   font-weight: 800;
   letter-spacing: -3px;
-   margin: 0;
+  
 
    
 }
@@ -388,7 +384,7 @@ color: var(--main-color);
 
 background-color: var(--section-background);
 
-
+margin-top: 120px;
 
 }
 
@@ -555,3 +551,184 @@ flex-wrap: wrap;
   box-shadow: rgb(163 163 163) 2px 2px 3px;
 
 }
+
+
+.contactus {
+margin-top: 80px;
+margin-bottom: 80px;
+
+background-color: var(--section-background);
+
+border-radius: 20px;
+box-shadow: rgb(163 163 163 / 10%) 4px 4px 25px;
+margin-bottom: 20px;
+
+padding: 40px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.contactus h2 {
+
+font-size: 22px;
+font-weight: 800;
+color: #878787;
+
+}
+
+.contactus .contactusss {
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 25px;
+}
+
+.contactus .contactusss .text {
+text-align: center;
+width: 300px;
+height: 45px;
+outline: none;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+color: #878787;
+background-color:white;
+transition: all var(--main-duration);
+
+}
+
+.contactus .contactusss .text:hover {
+
+  border: var(--main-color) solid 1px;
+
+}
+
+.contactus .contactusss .submit  {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgb(163 163 163 / 25%) 4px 4px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  color: #878787;
+  transition: all var(--main-duration);
+  }
+
+  .contactus .contactusss .submit:hover {
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--main-color);
+    border: var(--main-color) solid 1px;
+
+    }
+
+.contactus .contactusss select {
+  text-align: center;
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border: none;
+padding: 5px;
+  
+border-radius: 5px;
+font-size: 16px;
+color: #878787;
+background-color:white;
+transition: all var(--main-duration);
+
+}
+
+.contactus .contactusss select:hover {
+
+  border: var(--main-color) solid 1px;
+
+
+}
+  .contactus .contactusss textarea {
+    text-align: center;
+    width: 300px;
+    height: 120px;
+    outline: none;
+    border: none;
+
+    
+border-radius: 5px;
+font-size: 16px;
+
+color: #878787;
+background-color:white;
+transition: all var(--main-duration);
+
+
+    }
+
+    .contactus .contactusss textarea:hover {
+      border: var(--main-color) solid 1px;
+
+
+    }
+
+
+    footer{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      height: 50px;
+      width: 100%;
+      background-color: var(--main-color);
+      text-align: center;
+    }
+
+    footer h2{
+    
+      font-size: 16px;
+font-weight: 400;
+color: white;
+    }
+
+    
+    footer a {
+    text-decoration: none;
+      font-size: 16px;
+font-weight: 400;
+color: white;
+    }
+
+    .social-links {
+
+      margin-top: 50px;
+      width: 300px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    .social-links a {
+
+      text-decoration: none;
+      font-size: 22px;
+      color: var(--main-color);
+transition: all var(--main-duration) ease-in-out;
+color: #293a42;
+    }
+    .social-links a:hover {
+
+      transform: scale(1.5);
+color: var(--main-color);
+    }
